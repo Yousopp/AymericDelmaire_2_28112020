@@ -62,7 +62,7 @@ header {
   color: rgb(0, 101, 252, 0.7);
 }
 
-/***** Trait bleu en dessus des liens au survol *****/
+/***** Header - Sourlignage liens *****/
 
 ul li a {
   position: relative;
@@ -84,3 +84,5 @@ li a:hover:before,
 li a:hover:after {
   width: 100%;
 }
+
+/********** Section search **********/
