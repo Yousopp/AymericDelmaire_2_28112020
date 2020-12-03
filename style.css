@@ -89,10 +89,10 @@ li a:hover:after {
   width: 100%;
 }
 
-/********** Section search **********/
+/********** Section Search **********/
 
 .container_search {
-  padding: 30px 5%;
+  padding: 0 5%;
 }
 
 .logo_map {
@@ -135,4 +135,60 @@ li a:hover:after {
   outline-style: none;
   padding: 0 10px;
   font-weight: 800;
+}
+
+/********** Section Filters **********/
+
+.container_filters {
+  padding: 0 5%;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.tags {
+  display: flex;
+  padding: 0 1%;
+  align-items: center;
+}
+
+.tags_info {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.border_tags {
+  position: absolute;
+  background-color: #deebff;
+  border-radius: 50px;
+  padding: 10px;
+  margin-right: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.border_p {
+  border: lightgrey solid 1px;
+  border-radius: 50px;
+  z-index: 0;
+  padding: 14.5px 14.5px 14.5px 60px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.border_p:hover {
+  background-color: #deebff;
+  color: #0065fc;
+  border: #deebff solid 1px;
+}
+
+.border_tags_info {
+  border: lightgrey solid 1px;
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 15px;
 }
