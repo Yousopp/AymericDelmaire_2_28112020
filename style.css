@@ -8,6 +8,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+body {
+  max-width: 1500px;
+}
+
 .b {
   border: solid red 1px;
 }
@@ -210,8 +214,10 @@ li a:hover:after {
 /********** Section Content Forward **********/
 
 .container_content_forward {
+  float: left;
   width: 805px;
   margin-left: 5%;
+  margin-right: 3%;
   background-color: rgb(233, 233, 233);
   border-radius: 12px;
   padding: 20px;
@@ -295,4 +301,14 @@ Images CSS
 
 .image_hotel_amina {
   background-image: url("/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}
+
+/********** Section Content Forward **********/
+
+.container_content_populary {
+  float: left;
+  width: 275px;
+  height: 630px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 12px;
 }
