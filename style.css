@@ -18,7 +18,7 @@ h1 {
 }
 
 .padding_everywhere {
-  padding: 2px;
+  padding: 3px;
 }
 
 h1,
@@ -239,7 +239,6 @@ Article
   margin: 15px;
   padding: 5px;
   box-shadow: 5px 5px 5px #aaa;
-  z-index: 2;
   cursor: pointer;
   transition: 0.3s ease;
 }
