@@ -415,3 +415,112 @@ Texte
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+/********** Section Activities **********/
+
+.container_content_activities {
+  padding: 0 5%;
+}
+
+.container_all_activities {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.container_one_activities {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background: none;
+}
+
+.container_second_activities {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background: none;
+}
+
+/*
+Activities
+*/
+
+.container_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+}
+
+.container_item_big,
+.container_item_little {
+  width: 93%;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px #aaa;
+  transition: 0.3s ease;
+  background: none;
+}
+
+.container_item_big:hover,
+.container_item_little:hover {
+  transform: translate3d(3px, 3px, 0);
+  box-shadow: 3px 3px 3px #aaa;
+}
+
+.margin_activities_left {
+  margin-left: 20px;
+}
+
+.item1 {
+  background-image: url(/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+
+.item2 {
+  background-image: url(/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+}
+
+.item3 {
+  background-image: url(/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+}
+
+.item4 {
+  background-image: url(/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+
+.item5 {
+  background-image: url(/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+}
+
+.item6 {
+  background-image: url(/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+}
+
+.item1,
+.item4 {
+  height: 445px;
+}
+
+.item2,
+.item3,
+.item5,
+.item6 {
+  height: 180px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px 12px 0 0;
+  background-position: center;
+}
+
+.titre_h4_padding {
+  padding: 18px;
+}
