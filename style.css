@@ -8,6 +8,11 @@
   font-family: "Raleway", sans-serif;
 }
 
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 1400px;
 }
