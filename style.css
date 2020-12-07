@@ -9,7 +9,7 @@
 }
 
 body {
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
 .b {
@@ -34,19 +34,20 @@ p {
 }
 /********** Header **********/
 
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 5%;
+}
+
 li,
 a {
   color: black;
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
-}
-
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 5%;
 }
 
 .logo {
@@ -213,11 +214,16 @@ li a:hover:after {
 
 /********** Section Content Forward **********/
 
+.container_forward_populary {
+  width: 100%;
+  height: 630px;
+  display: flex;
+  justify-content: center;
+}
+
 .container_content_forward {
-  float: left;
-  width: 805px;
-  margin-left: 5%;
-  margin-right: 3%;
+  width: 58%;
+  height: 100%;
   background-color: rgb(233, 233, 233);
   border-radius: 12px;
   padding: 20px;
@@ -240,10 +246,10 @@ Article
 
 .article_content_forward {
   border-radius: 12px;
-  width: 225px;
-  height: 200px;
+  width: 200px;
+  height: 175px;
   margin: 15px;
-  padding: 5px;
+  padding: 3px;
   box-shadow: 5px 5px 5px #aaa;
   cursor: pointer;
   transition: 0.3s ease;
@@ -272,7 +278,7 @@ Images CSS
 .image_hotel_mer,
 .image_hotel_mouettes,
 .image_hotel_port {
-  height: 60%;
+  height: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px 12px 0 0;
@@ -303,12 +309,109 @@ Images CSS
   background-image: url("/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
-/********** Section Content Forward **********/
+/********** Section Content Populary **********/
 
 .container_content_populary {
-  float: left;
-  width: 275px;
-  height: 630px;
+  width: 30%;
+  height: 100%;
+  padding: 20px;
   background-color: rgb(233, 233, 233);
   border-radius: 12px;
+}
+
+.container_content_populary_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+}
+
+/*
+Titre populary
+*/
+
+.container_content_populary_title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(233, 233, 233);
+}
+
+.title_h1_section,
+#logo_article_populary {
+  margin: 15px 0 0 10px;
+}
+
+#logo_article_populary {
+  width: 20px;
+  background-color: rgb(233, 233, 233);
+  padding: 10px 0;
+  margin-right: 15px;
+}
+
+/*
+Articles populary
+*/
+
+.article_content_populary {
+  display: flex;
+  border-radius: 12px;
+  width: 95%;
+  height: 150px;
+  margin: 15px 0;
+  padding: 3px;
+  box-shadow: 5px 5px 5px #aaa;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.article_content_populary:hover {
+  transform: translate3d(3px, 3px, 0);
+  box-shadow: 3px 3px 3px #aaa;
+}
+
+.image_hotel_soleil,
+.image_coeur_eau,
+.image_hotel_bleublanc {
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px 0 0 12px;
+  background-position: center;
+}
+
+.image_hotel_soleil {
+  background-image: url("/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+.image_coeur_eau {
+  background-image: url("/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+
+.image_hotel_bleublanc {
+  background-image: url("/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+/*
+Texte
+*/
+
+.article_content_populary_texte {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 15px;
+}
+
+.logo_stars_populary {
+  width: 75px;
+  background: none;
+  position: relative;
+}
+
+.margin_top_bot_10px {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
