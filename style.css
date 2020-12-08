@@ -4,7 +4,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: #f2f2f2;
   font-family: "Raleway", sans-serif;
 }
 
@@ -15,6 +14,7 @@ html {
 
 body {
   max-width: 1400px;
+  background-color: #f2f2f2;
 }
 
 .b {
@@ -195,7 +195,8 @@ li a:hover:after {
 }
 
 .border_p {
-  border: lightgrey solid 1px;
+  border: lightgrey solid 2px;
+  background-color: white;
   border-radius: 50px;
   z-index: 0;
   padding: 14.5px 14.5px 14.5px 60px;
@@ -207,7 +208,7 @@ li a:hover:after {
 .border_p:hover {
   background-color: #deebff;
   color: #0065fc;
-  border: #deebff solid 1px;
+  border: #deebff solid 2px;
 }
 
 .border_tags_info {
@@ -251,6 +252,7 @@ Article
 
 .article_content_forward {
   border-radius: 12px;
+  background-color: white;
   width: 200px;
   height: 175px;
   margin: 15px;
@@ -361,6 +363,7 @@ Articles populary
 
 .article_content_populary {
   display: flex;
+  background-color: white;
   border-radius: 12px;
   width: 95%;
   height: 150px;
@@ -463,9 +466,11 @@ Activities
 .container_item_little {
   width: 93%;
   border-radius: 12px;
+  background-color: white;
   box-shadow: 5px 5px 5px #aaa;
   transition: 0.3s ease;
   background: none;
+  cursor: pointer;
 }
 
 .container_item_big:hover,
@@ -528,4 +533,22 @@ Activities
 
 .titre_h4_padding {
   padding: 18px;
+}
+
+/********** Footer **********/
+
+footer {
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 270px;
+  padding: 40px 0;
+}
+
+footer div ul li,
+footer div {
+  background-color: rgb(233, 233, 233);
+  list-style: none;
 }
