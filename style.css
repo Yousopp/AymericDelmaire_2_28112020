@@ -470,7 +470,6 @@ Activities
   box-shadow: 5px 5px 5px #aaa;
   transition: 0.3s ease;
   background: none;
-  cursor: pointer;
 }
 
 .container_item_big:hover,
@@ -551,4 +550,14 @@ footer div ul li,
 footer div {
   background-color: rgb(233, 233, 233);
   list-style: none;
+}
+
+/*
+Lien div clic
+*/
+
+.div_clic {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
