@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  max-width: 1400px;
+  max-width: 1440px;
   background-color: #f2f2f2;
 }
 
@@ -169,12 +169,14 @@ li a:hover:after {
 
 .filters {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .tags {
   display: flex;
-  padding: 0 1%;
+  padding: 10px 1%;
   align-items: center;
 }
 
@@ -220,16 +222,16 @@ li a:hover:after {
 
 /********** Section Content Forward **********/
 
-.container_forward_populary {
+.container_content_forward_and_populary {
   width: 100%;
-  height: 630px;
+  height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 5%;
 }
 
 .container_content_forward {
-  width: 58%;
-  height: 100%;
+  width: auto;
   background-color: rgb(233, 233, 233);
   border-radius: 12px;
   padding: 20px;
@@ -242,8 +244,8 @@ Container des articles
 .container_content_forward_article {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
-  background-color: rgb(233, 233, 233);
 }
 
 /*
@@ -253,8 +255,8 @@ Article
 .article_content_forward {
   border-radius: 12px;
   background-color: white;
-  width: 200px;
-  height: 175px;
+  width: 215px;
+  height: 170px;
   margin: 15px;
   padding: 3px;
   box-shadow: 5px 5px 5px #aaa;
@@ -267,12 +269,18 @@ Article
   box-shadow: 3px 3px 3px #aaa;
 }
 
+.article_content_forward_texte {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 5px;
+}
+
 .logo_stars {
   width: 75px;
   background: none;
-  position: relative;
-  padding-left: 5px;
-  bottom: 25px;
 }
 
 /* 
@@ -285,7 +293,7 @@ Images CSS
 .image_hotel_mer,
 .image_hotel_mouettes,
 .image_hotel_port {
-  height: 50%;
+  height: 60%;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px 12px 0 0;
@@ -320,17 +328,18 @@ Images CSS
 
 .container_content_populary {
   width: 30%;
-  height: 100%;
+  height: auto;
   padding: 20px;
   background-color: rgb(233, 233, 233);
   border-radius: 12px;
 }
 
 .container_content_populary_article {
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(233, 233, 233);
+  justify-content: space-between;
 }
 
 /*
@@ -365,7 +374,7 @@ Articles populary
   display: flex;
   background-color: white;
   border-radius: 12px;
-  width: 95%;
+  width: 250px;
   height: 150px;
   margin: 15px 0;
   padding: 3px;
@@ -410,18 +419,13 @@ Texte
   width: 60%;
   display: flex;
   flex-direction: column;
-  padding: 10px 0 0 15px;
+  justify-content: space-around;
+  padding: 0 0 0 10px;
 }
 
 .logo_stars_populary {
   width: 75px;
   background: none;
-  position: relative;
-}
-
-.margin_top_bot_10px {
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 /********** Section Activities **********/
@@ -440,14 +444,14 @@ Texte
   width: 100%;
   height: 500px;
   display: flex;
-  background: none;
+  padding: 15px 0;
 }
 
 .container_second_activities {
   width: 100%;
   height: 500px;
   display: flex;
-  background: none;
+  padding: 15px 0;
 }
 
 /*
@@ -459,17 +463,21 @@ Activities
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: none;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.container_item_big {
+  margin: 0 15px;
 }
 
 .container_item_big,
 .container_item_little {
-  width: 93%;
+  width: 100%;
   border-radius: 12px;
   background-color: white;
   box-shadow: 5px 5px 5px #aaa;
   transition: 0.3s ease;
-  background: none;
 }
 
 .container_item_big:hover,
@@ -478,8 +486,9 @@ Activities
   box-shadow: 3px 3px 3px #aaa;
 }
 
-.margin_activities_left {
-  margin-left: 20px;
+.container_item_texte {
+  height: 10%;
+  margin: 10px;
 }
 
 .item1 {
@@ -508,14 +517,14 @@ Activities
 
 .item1,
 .item4 {
-  height: 445px;
+  height: 90%;
 }
 
 .item2,
 .item3,
 .item5,
 .item6 {
-  height: 180px;
+  height: 175px;
 }
 
 .item1,
@@ -530,10 +539,6 @@ Activities
   background-position: center;
 }
 
-.titre_h4_padding {
-  padding: 18px;
-}
-
 /********** Footer **********/
 
 footer {
@@ -542,13 +547,12 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  height: 270px;
+  height: auto;
   padding: 40px 0;
 }
 
 footer div ul li,
 footer div {
-  background-color: rgb(233, 233, 233);
   list-style: none;
 }
 
@@ -560,4 +564,51 @@ Lien div clic
   display: block;
   width: 100%;
   height: 100%;
+}
+
+/********** Responsive **********/
+
+/*
+Ecran ordinateur ----------------------
+*/
+@media (max-width: 1024px) {
+}
+
+/*
+Tablette ------------------------------
+*/
+@media (max-width: 768px) {
+  .container_content_forward_and_populary {
+    flex-direction: column-reverse;
+  }
+
+  .container_content_populary {
+    width: 100%;
+    height: auto;
+  }
+
+  .container_content_populary_article {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .container_all_activities {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+/*
+Smartphone ----------------------------
+*/
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  footer div h1 {
+    padding-top: 30px;
+  }
 }
