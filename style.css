@@ -23,20 +23,12 @@ body {
 
 h1 {
   font-size: 20px;
-  padding: 10px 0;
 }
 
 .padding_everywhere {
   padding: 3px;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-  background: none;
-}
 /********** Header **********/
 
 header {
@@ -78,6 +70,7 @@ a {
 }
 
 .call_to_action {
+  padding-left: 15px;
   color: rgb(0, 101, 252, 1);
   cursor: pointer;
   font-weight: 900;
@@ -111,6 +104,10 @@ li a::before {
 li a:hover:before,
 li a:hover:after {
   width: 100%;
+}
+
+.element_hidden {
+  display: none;
 }
 
 /********** Section Search **********/
@@ -190,10 +187,10 @@ li a:hover:after {
   position: absolute;
   background-color: #deebff;
   border-radius: 50px;
-  padding: 10px;
+  width: 52px;
+  padding: 15px;
   margin-right: 10px;
   z-index: 1;
-  cursor: pointer;
 }
 
 .border_p {
@@ -203,7 +200,6 @@ li a:hover:after {
   z-index: 0;
   padding: 14.5px 14.5px 14.5px 60px;
   font-weight: 600;
-  cursor: pointer;
   transition: 0.3s linear;
 }
 
@@ -215,6 +211,7 @@ li a:hover:after {
 
 .border_tags_info {
   border: lightgrey solid 1px;
+  width: 25px;
   border-radius: 50px;
   padding: 5px;
   margin-right: 15px;
@@ -301,27 +298,39 @@ Images CSS
 }
 
 .image_auberge_cannebiere {
-  background-image: url("/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
 .image_hotel_port {
-  background-image: url("/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 
 .image_hotel_mouettes {
-  background-image: url("/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 
 .image_hotel_mer {
-  background-image: url("/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
 .image_auberge_panier {
-  background-image: url("/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
 .image_hotel_amina {
-  background-image: url("/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}
+
+.padding_title_forward {
+  padding: 20px 30px;
+}
+
+.padding_title_populary {
+  padding: 20px 0;
+}
+
+.padding_second_title_forward {
+  padding: 50px 30px;
 }
 
 /********** Section Content Populary **********/
@@ -354,16 +363,9 @@ Titre populary
   background-color: rgb(233, 233, 233);
 }
 
-.title_h1_section,
-#logo_article_populary {
-  margin: 15px 0 0 10px;
-}
-
 #logo_article_populary {
   width: 20px;
   background-color: rgb(233, 233, 233);
-  padding: 10px 0;
-  margin-right: 15px;
 }
 
 /*
@@ -379,7 +381,6 @@ Articles populary
   margin: 15px 0;
   padding: 3px;
   box-shadow: 5px 5px 5px #aaa;
-  cursor: pointer;
   transition: 0.3s ease;
 }
 
@@ -400,15 +401,15 @@ Articles populary
 }
 
 .image_hotel_soleil {
-  background-image: url("/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  background-image: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
 
 .image_coeur_eau {
-  background-image: url("/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  background-image: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
 
 .image_hotel_bleublanc {
-  background-image: url("/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  background-image: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 
 /*
@@ -492,27 +493,27 @@ Activities
 }
 
 .item1 {
-  background-image: url(/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-image: url(./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
 
 .item2 {
-  background-image: url(/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-image: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 }
 
 .item3 {
-  background-image: url(/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  background-image: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 }
 
 .item4 {
-  background-image: url(/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  background-image: url(./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 }
 
 .item5 {
-  background-image: url(/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-image: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 }
 
 .item6 {
-  background-image: url(/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  background-image: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 }
 
 .item1,
@@ -560,8 +561,14 @@ footer div {
 Lien div clic
 */
 
-.div_clic {
+.a_clic_all_flex {
   display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.a_clic_all_card {
+  display: flex;
   width: 100%;
   height: 100%;
 }
@@ -597,12 +604,105 @@ Tablette ------------------------------
     height: auto;
     flex-direction: column;
   }
+
+  .container_second_activities {
+    flex-direction: row-reverse;
+  }
 }
 
 /*
 Smartphone ----------------------------
 */
 @media (max-width: 500px) {
+  /* Links Hidden top */
+
+  .element_hidden {
+    display: inline;
+    width: 100%;
+  }
+
+  .nav_links {
+    display: none;
+  }
+
+  .nav_barre_hidden {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link_highlight {
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    border-bottom: solid lightgrey 3px;
+  }
+
+  .nav_barre_hidden a {
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav_barre_hidden a:hover {
+    color: #0065fc;
+  }
+
+  .link_highlight:hover {
+    border-bottom: solid #0065fc 3px;
+  }
+
+  /* Search barre */
+
+  .container_search {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .barre_search {
+    justify-content: center;
+  }
+
+  /* Content Populary */
+
+  .container_content_forward_and_populary {
+    padding: 0;
+  }
+
+  .container_content_populary {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .container_content_populary_title {
+    justify-content: space-around;
+  }
+
+  .article_content_populary {
+    width: 90%;
+  }
+
+  /* Content Forward */
+
+  .container_content_forward {
+    background: none;
+  }
+
+  .article_content_forward {
+    width: 90%;
+    height: 220px;
+  }
+
+  .article_content_forward_texte {
+    padding-left: 10px;
+  }
+
+  .padding_second_title_forward {
+    padding: 10px;
+  }
+
+  /* Footer */
+
   footer {
     flex-direction: column;
     padding-left: 20px;
