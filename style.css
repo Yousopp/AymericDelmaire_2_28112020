@@ -364,7 +364,7 @@ Titre populary
 }
 
 #logo_article_populary {
-  width: 20px;
+  width: 25px;
   background-color: rgb(233, 233, 233);
 }
 
@@ -488,7 +488,7 @@ Activities
 }
 
 .container_item_texte {
-  height: 10%;
+  height: 30px;
   margin: 10px;
 }
 
@@ -518,7 +518,7 @@ Activities
 
 .item1,
 .item4 {
-  height: 90%;
+  height: 421px;
 }
 
 .item2,
@@ -584,7 +584,7 @@ Ecran ordinateur ----------------------
 /*
 Tablette ------------------------------
 */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .container_content_forward_and_populary {
     flex-direction: column-reverse;
   }
@@ -699,6 +699,46 @@ Smartphone ----------------------------
 
   .padding_second_title_forward {
     padding: 10px;
+  }
+
+  /* Activities */
+
+  .container_all_activities {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .container_one_activities {
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .container_second_activities {
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .container_item_big {
+    margin: 10px 0;
+  }
+  .container_item_little {
+    margin: 20px 0;
+  }
+
+  .container_item {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6 {
+    height: 175px;
   }
 
   /* Footer */
