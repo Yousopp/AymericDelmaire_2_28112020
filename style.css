@@ -171,6 +171,10 @@ li a:hover:after {
   align-items: center;
 }
 
+.filters_title {
+  margin-right: 20px;
+}
+
 .tags {
   display: flex;
   padding: 10px 1%;
@@ -585,6 +589,8 @@ Ecran ordinateur ----------------------
 Tablette ------------------------------
 */
 @media (max-width: 1024px) {
+  /* Content Populary */
+
   .container_content_forward_and_populary {
     flex-direction: column-reverse;
   }
@@ -599,6 +605,13 @@ Tablette ------------------------------
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  .article_content_populary {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Activities */
 
   .container_all_activities {
     height: auto;
@@ -661,6 +674,13 @@ Smartphone ----------------------------
 
   .barre_search {
     justify-content: center;
+  }
+
+  /* Filters */
+
+  .filters_title {
+    width: 100%;
+    margin-bottom: 15px;
   }
 
   /* Content Populary */
