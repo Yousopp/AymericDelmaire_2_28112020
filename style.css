@@ -636,42 +636,38 @@ Tablette ------------------------------
 Smartphone ----------------------------
 */
 @media (max-width: 500px) {
-  /* Links Hidden top */
-
-  .element_hidden {
-    display: inline;
+  nav {
+    position: absolute;
     width: 100%;
+    left: 0.1px;
   }
 
   .nav_links {
-    display: none;
-  }
-
-  .nav_barre_hidden {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 125px;
+    justify-content: space-between;
   }
 
   .link_highlight {
     width: 50%;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 0;
     text-align: center;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
     border-bottom: solid lightgrey 3px;
   }
 
-  .nav_barre_hidden a {
-    transition: all 0.3s ease 0s;
-  }
-
-  .nav_barre_hidden a:hover {
-    color: #0065fc;
+  ul li.link_highlight a {
+    font-size: 16px;
+    font-weight: 600;
   }
 
   .link_highlight:hover {
     border-bottom: solid #0065fc 3px;
+  }
+
+  li a::after,
+  li a::before {
+    background: none;
   }
 
   /* Search barre */
